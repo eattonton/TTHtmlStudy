@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>HangMan PuzzleWord--Triweb.cn</title>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <link href="js/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .list-group-horizontal .list-group-item {
+            display: inline-block;
+            margin-left:0px;
+            padding-left:3px;
+            font-weight: bold;
+            font-size: 25px;
+        }
+       
+    </style>
+    <script type="text/javascript"> 
+        function doTTS(){ 
+            var ttsDiv = document.getElementById('bdtts_div_id'); 
+            var ttsAudio = document.getElementById('tts_autio_id'); 
+            var ttsText = document.getElementById('ttsText').value; 
+ 
+            // 这样就可实现播放内容的替换了 
+            ttsDiv.removeChild(ttsAudio); 
+            var au1 = '<audio id="tts_autio_id" autoplay="autoplay">'; 
+            var sss = '<source id="tts_source_id" src="http://dict.youdao.com/dictvoice?audio='+ttsText+'" type="audio/mpeg">'; 
+            var eee = '<embed id="tts_embed_id" height="0" width="0" src="">'; 
+            var au2 = '</audio>'; 
+            ttsDiv.innerHTML = au1 + sss + eee + au2; 
+            ttsAudio = document.getElementById('tts_autio_id'); 
+            ttsAudio.play(); 
+        } 
+  
+    </script>
+</head>
+<body>
+    <div><image id="title" class="img-responsive center-block" src="./HangMan/title.png"></image></div>
+    <div>
+        <select id="dict" class="form-control" data-style="btn-info" onchange="SelectDict()">
+            <option value ="xiaoxue2" selected = "selected">小学</option>
+            <option value ="gaozhong">高中</option>
+            <option value ="siji">四级</option>
+            <option value ="liuji">六级</option>
+            <option value ="kelinsi5">柯林斯5星</option>
+            <option value ="kelinsi4">柯林斯4星</option>
+            <option value ="kelinsi3">柯林斯3星</option>
+            <option value ="kelinsi2">柯林斯2星</option>
+            <option value ="kelinsi1">柯林斯1星</option>
+            <option value ="coca20000">COCA</option>
+        </select>
+    </div>
+    <br/>
+    <div>
+        &nbsp;
+        <input type="text" id="ttsText" value='cat' onchange="InputWord()" style="display:none;"/>
+        <input type="button" id="tts_btn" onclick="doTTS()" value="朗读" class="btn btn-info"/>
+        <input type="button" id="tts_btn" onclick="ToTip()" value="提示" class="btn btn-info"/>
+        <input type="button" id="tts_btn" onclick="ResetView()" value="下一个" class="btn btn-info"/>
+        
+    </div>
+    <br/>
+    <div id="bdtts_div_id">
+        <audio id="tts_autio_id">
+            <source id="tts_source_id" type="audio/mpeg">
+            <embed id="tts_embed_id" height="0" width="0" src="">
+        </audio>
+    </div>
+    <div>
+        <ul id="puzzle" class="list-group-horizontal" style="width:100%;text-align:center;padding-left:0;">
+        </ul>
+    </div>
+    <div id="wordTip"></div>
+
+    <div id="keyboard">
+        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">Q</button>
+            </div>
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">W</button>
+            </div>
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">E</button>
+            </div>
+             <div class="btn-group" role="group"><button type="button" class="btn btn-default">R</button>
+            </div>
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">T</button>
+            </div>
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">Y</button>
+            </div>
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">U</button>
+            </div>
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">I</button>
+            </div>
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">O</button>
+            </div>
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">P</button>
+            </div>
+        </div>
+        <div class="btn-group btn-group-justified center-block" style="width:90%;" role="group" aria-label="...">
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">A</button>
+            </div>
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">S</button>
+            </div>
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">D</button>
+            </div>
+             <div class="btn-group" role="group"><button type="button" class="btn btn-default">F</button>
+            </div>
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">G</button>
+            </div>
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">H</button>
+            </div>
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">J</button>
+            </div>
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">K</button>
+            </div>
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">L</button>
+            </div>
+        </div>
+        <div class="btn-group btn-group-justified center-block" style="width:75%;" role="group" aria-label="...">
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">Z</button>
+            </div>
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">X</button>
+            </div>
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">C</button>
+            </div>
+             <div class="btn-group" role="group"><button type="button" class="btn btn-default">V</button>
+            </div>
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">B</button>
+            </div>
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">N</button>
+            </div>
+            <div class="btn-group" role="group"><button type="button" class="btn btn-default">M</button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div>
+    <image id="man" style="width:250px;height:300px;background-repeat:no-repeat;background-size:100% 100%;-moz-background-size:100% 100%;">
+    </image>
+    </div>
+    <div>Author by Eattonton from TriWeb.cn, ver 1.39</div>
+</body>
+<script type="text/javascript">
+    var num = 0   //记录word的数量
+    var word1 = "" //英文
+    var word2 = ""    //中文
+    var bFinish = false
+    var numErr= 0
+    var wordDict=[]
+    var keyDownDict=[]  //按键记录
+    //加载数据并设置参数
+    $(document).ready(function(){
+        //加载词典
+        SelectDict()
+ 
+        $("#keyboard button").on("click",function(){
+            if(bFinish == false){
+                if(numErr >= 6){
+                    //挑战失败
+                    return
+                }
+                let val1 = $(this).text()
+                if(keyDownDict.indexOf(val1)>= 0){
+                    //已经按过了 不用处理
+                    return
+                }
+                keyDownDict.push(val1)
+                
+                let arr1 = FindChar(val1,word1)
+                //console.log(arr1)
+                if(arr1.length > 0){
+                    for(let i=0;i<arr1.length;i++){
+                        if(arr1[i] == 0){
+                            $("#word_"+arr1[i]).text(val1.toUpperCase())
+                        }else{
+                            $("#word_"+arr1[i]).text(val1.toLowerCase())
+                        }
+                    }
+                    $(this).css("background-color","green")
+                }
+                else{
+                    $(this).css("background-color","red")
+                    ++numErr
+                    ShowManImage()
+                    if(numErr >= 6){
+                        ToTip2()  //挑战失败 直接给出英文结果
+                    }
+                }
+                
+                bFinish = ChectFinish(word1)
+                if(bFinish){
+                   //TraslateWord(word1)
+                   ToTip2()
+                }
+            }
+        })
+    })
+
+    function LoadDict(sfile){
+        $.ajax({
+            url: "./HangMan/data/"+sfile+".txt",
+            type: 'get',
+            dataType: 'text',
+            success: function (result) {
+                wordDict = []
+                wordDict = result.split('\n')
+                //console.log(wordDict)
+                GetRandWord()
+             } 
+        });
+    }
+
+    function SelectDict(){
+        let selDic = $('#dict').val()
+        LoadDict(selDic)
+    }
+
+    function ResetView(){
+        //重新获取单词后，需要重置当前页面
+        GetRandWord()
+    }
+
+    function InitWord(){
+        word1 = $("#ttsText").val()
+        if(word1 ==""){
+            return
+        }
+        word2=""
+        TraslateWord(word1)  //获取中文 word2
+
+        ShowManImage()
+        word1 = word1.toUpperCase()
+        num = word1.length
+        numErr= 0
+        bFinish = false
+
+        ResetPuzzle()
+        ResetKeyBoard()
+        ResetManImage()
+
+        //setup first
+        $("#word_0").text(word1[0])
+        $("#wordTip").text("")
+    }
+
+    function ResetKeyBoard(){
+        $("#keyboard button").css("background-color","white")
+        keyDownDict = []
+    }
+
+    function ResetPuzzle(){
+        $("#puzzle").empty()
+
+        //设置空的
+        for(let i=0;i<num;i++){
+            let str1 = '<li class="list-group-item" style="width:30px;height:50px" '
+            str1 +='id="word_'+i+ '" >'
+            $("#puzzle").append(str1+'&nbsp;</li>')
+        }
+
+    }
+
+    function FindChar(c1,str2){
+        var arr1 = []
+        for(let i=0; i<str2.length; i++){
+            if(str2[i].toUpperCase() == c1.toUpperCase()){
+                arr1.push(i)
+            }
+        }
+        return arr1
+    }
+
+    function ChectFinish(str2){
+        let str1 = ""
+        for(let i=0;i<num;i++){
+           let s1 = $("#word_"+i).text()
+           str1 += s1
+        }
+
+        if(str1.toUpperCase() == str2.toUpperCase()){
+            return true
+        }
+
+        return false
+    }
+
+    function ShowManImage(){
+        $("#man").attr("src", "./HangMan/"+numErr+".png")
+        //$("#man").css('background-image','url(./HangMan/'+numErr+'.png)')
+    }
+
+    function ResetManImage(){
+       $("#man").attr("src", "./HangMan/0.png")
+       //$("#man").css('background-image','url(./HangMan/0.png)')
+    }
+ 
+    function InputWord(){
+        InitWord()
+    }
+
+    function GetRandWord(){
+        let start = 0
+        let end = wordDict.length-1
+        let idx = GetRandNumByRange(start,end)
+        $("#ttsText").val(wordDict[idx])
+        InitWord()
+    }
+
+    function GetRandNumByRange(start, end) {
+        return parseInt(Math.random() * (end - start) + start)
+    }
+
+    //提示
+    function ToTip(){
+        //TraslateWord(word1)
+        $("#wordTip").text(word2)
+    }
+
+    function ToTip2(){
+        let str1 = word1.toLowerCase() + ":"+word2
+        $("#wordTip").text(str1)
+    }
+
+    function TraslateWord(ttsText){
+        $.ajax({
+            url: "https://fanyi.youdao.com/openapi.do",
+            data:{
+                keyfrom:"yangchong",
+                key:"520150590",
+                type:"data",
+                doctype:"jsonp",
+                version:"1.1",
+                q:ttsText
+            },
+            type: 'get',
+            dataType: 'jsonp',
+            jsonpCallback:"show",
+            success: function (result) {
+                word2 = result["translation"][0]
+              
+            } 
+        })
+            
+    }
+
+</script>
+</html>

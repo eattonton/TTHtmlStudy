@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style type="text/css">
+            #canvas {
+                border: thin solid blue;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <p id="message"></p>
+        <canvas id="canvas" width="1200" height="600"></canvas>
+    </body>
+    <script type="text/javascript">
+        var canvas = document.getElementById("canvas");
+        var context = canvas.getContext("2d");
+        
+        function getLocation(x, y) {
+            var bbox = canvas.getBoundingClientRect();
+            return {
+                x: (x - bbox.left) * (canvas.width / bbox.width),
+                y: (y - bbox.top) * (canvas.height / bbox.height)
+                
+                /*
+                 * 此处不用下面两行是为了防止使用CSS和JS改变了canvas的高宽之后是表面积拉大而实际
+                 * 显示像素不变而造成的坐标获取不准的情况
+                x: (x - bbox.left),
+                y: (y - bbox.top)
+                */
+            };
+        }
+        function drawHorizontalLine(y) {
+            context.beginPath();
+            context.moveTo(0, y);
+            context.lineTo(canvas.width, y);
+            context.stroke();
+            context.closePath();
+        }
+        function drawVerticalLine(x) {
+            context.beginPath();
+            context.moveTo(x, 0);
+            context.lineTo(x, canvas.height);
+            context.stroke();
+            context.closePath();
+        }
+        canvas.onmousemove = function (e) {
+            var location = getLocation(e.clientX, e.clientY);
+            var message = document.getElementById("message");
+            message.innerHTML = "x=" + location.x + " ,y=" + location.y;
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            drawHorizontalLine(location.y);
+            drawVerticalLine(location.x);
+        };
+    </script>
+</html>

@@ -1,0 +1,45 @@
+[{"pic":"scene/toilet paper.JPG","text":"toilet paper","width":800,"height":0}
+,{"pic":"scene/mirror.JPG","text":"mirror","width":800,"height":0}
+,{"pic":"scene/toilet.JPG","text":"toilet","width":800,"height":0}
+,{"pic":"scene/shampoo.JPG","text":"shampoo","width":800,"height":0}
+,{"pic":"scene/razor.JPG","text":"razor","width":800,"height":0}
+,{"pic":"scene/bathtub.JPG","text":"bathtub","width":800,"height":0}
+,{"pic":"scene/shower.JPG","text":"shower","width":800,"height":0}
+,{"pic":"scene/comb.JPG","text":"comb","width":800,"height":0}
+,{"pic":"scene/sink.JPG","text":"sink","width":800,"height":0}
+,{"pic":"scene/towel.JPG","text":"towel","width":800,"height":0}
+,{"pic":"scene/hair dryer.JPG","text":"hair dryer","width":800,"height":0}
+,{"pic":"scene/palmtree.JPG","text":"palm tree","width":800,"height":0}
+,{"pic":"scene/sand.JPG","text":"sand","width":800,"height":0}
+,{"pic":"scene/spider.JPG","text":"spider","width":800,"height":0}
+,{"pic":"scene/antelope.JPG","text":"antelope","width":800,"height":0}
+,{"pic":"scene/camel.JPG","text":"camel","width":800,"height":0}
+,{"pic":"scene/lizard.JPG","text":"lizard","width":800,"height":0}
+,{"pic":"scene/rabbit.JPG","text":"rabbit","width":800,"height":0}
+,{"pic":"scene/tent.JPG","text":"tent","width":800,"height":0}
+,{"pic":"scene/hedgehog.JPG","text":"hedgehog","width":800,"height":0}
+,{"pic":"scene/mouse.JPG","text":"mouse","width":800,"height":0}
+,{"pic":"scene/scorpion.JPG","text":"scorpion","width":800,"height":0}
+,{"pic":"scene/date.JPG","text":"date","width":800,"height":0}
+,{"pic":"dog.jpg","text":"dog","width":1000,"height":738,
+"words":[{"t":"stop","x0":112,"y0":11,"x1":195,"y1":39}
+ ,{"t":"muzzle","x0":13,"y0":43,"x1":146,"y1":91}
+ ,{"t":"cheek","x0":362,"y0":74,"x1":464,"y1":109}
+ ,{"t":"flews","x0":84,"y0":169,"x1":184,"y1":214}
+ ,{"t":"withers","x0":440,"y0":165,"x1":563,"y1":205}
+ ,{"t":"back","x0":601,"y0":198,"x1":701,"y1":231}
+ ,{"t":"shoulder","x0":140,"y0":280,"x1":293,"y1":332}
+ ,{"t":"thigh","x0":828,"y0":293,"x1":933,"y1":332}
+ ,{"t":"forearm","x0":215,"y0":474,"x1":370,"y1":520}
+ ,{"t":"elbow","x0":448,"y0":460,"x1":536,"y1":498}
+ ,{"t":"knee","x0":587,"y0":431,"x1":690,"y1":469}
+ ,{"t":"tail","x0":880,"y0":421,"x1":981,"y1":463}
+ ,{"t":"hock","x0":661,"y0":513,"x1":765,"y1":553}
+ ,{"t":"wrist","x0":274,"y0":609,"x1":383,"y1":644}
+ ,{"t":"toe","x0":891,"y0":664,"x1":997,"y1":714}]}
+,{"pic":"cat.jpg","text":"cat","width":1000,"height":738,
+"words":[{"t":"ear","x0":16,"y0":84,"x1":120,"y1":134}
+,{"t":"eye","x0":14,"y0":167,"x1":113,"y1":211}
+,{"t":"tail","x0":644,"y0":151,"x1":753,"y1":192}
+,{"t":"fur","x0":48,"y0":364,"x1":163,"y1":409}]}
+]

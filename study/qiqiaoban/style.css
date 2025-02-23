@@ -1,0 +1,106 @@
+body{
+  margin:0px;
+  padding: 0px;
+}
+
+.{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+
+#main{
+    width: 100vw;
+    height: 100vh;
+    background: hsl(0deg, 0%, 100%);
+}
+
+.buttonPanel{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    width: 100%;
+    height:70px;
+    /*规定主轴方向*/
+    /*row 规定主轴方向为水平*/
+    /*column 规定主轴方向为垂直*/
+    flex-direction:row;
+
+    /*元素在水平方向如何展示:flex-start| center|space-around|space-between*/
+    /*在主轴方向如何展示*/
+    justify-content:space-around;
+
+    /*在副轴方向如何展示*/
+    align-items:center;
+    z-index: 1000;
+}
+
+.buttonCell{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    border: 1rpx solid #ddd;
+
+}
+
+#btn1{
+    background: url('./button0.jpg') no-repeat -4px -20px;
+    background-origin: border-box;  /*border-box定义图片从边框开始*/
+    background-clip: content-box;
+    background-size: 100% 300%;    /*图片尺寸*/
+}
+
+#btn2{
+    background: url('./button0.jpg') no-repeat -4px -122px;
+    background-origin: border-box;  /*border-box定义图片从边框开始*/
+    background-clip: content-box;
+    background-size: 100% 300%;    /*图片尺寸*/
+}
+
+#alert {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%,-50%);
+    z-index: 99999;
+    text-align: center;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    background: url('./right.png') no-repeat;
+    background-size:cover; 
+}
+
+.alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    background: url('./wrong.png') no-repeat;
+    background-size:cover; 
+}
+
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.version{
+    position: absolute;
+    bottom: 10px;
+}

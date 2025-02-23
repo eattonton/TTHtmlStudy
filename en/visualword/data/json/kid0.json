@@ -1,0 +1,317 @@
+[{"pic":"flash/mother.JPG","text":"mother","width":800,"height":0}
+,{"pic":"flash/father.JPG","text":"father","width":800,"height":0}
+,{"pic":"flash/grandmother.JPG","text":"grandmother","width":800,"height":0}
+,{"pic":"flash/grandfather.JPG","text":"grandfather","width":800,"height":0}
+,{"pic":"flash/brother.JPG","text":"brother","width":800,"height":0}
+,{"pic":"flash/sister.JPG","text":"sister","width":800,"height":0}
+,{"pic":"flash/car.JPG","text":"car","width":800,"height":0}
+,{"pic":"flash/ball.JPG","text":"ball","width":800,"height":0}
+,{"pic":"flash/bike.JPG","text":"bike","width":800,"height":0}
+,{"pic":"flash/train.JPG","text":"train","width":800,"height":0}
+,{"pic":"flash/doll.JPG","text":"doll","width":800,"height":0}
+,{"pic":"flash/computer.JPG","text":"computer","width":800,"height":0}
+,{"pic":"flash/boat.JPG","text":"boat","width":800,"height":0}
+,{"pic":"flash/truck.JPG","text":"truck","width":800,"height":0}
+,{"pic":"flash/bus.JPG","text":"bus","width":800,"height":0}
+,{"pic":"flash/plane.JPG","text":"plane","width":800,"height":0}
+,{"pic":"flash/helicopter.JPG","text":"helicopter","width":800,"height":0}
+,{"pic":"flash/motorbike.JPG","text":"motorbike","width":800,"height":0}
+,{"pic":"flash/stair.JPG","text":"stair","width":800,"height":0}
+,{"pic":"flash/bedroom.JPG","text":"bedroom","width":800,"height":0}
+,{"pic":"flash/bathroom.JPG","text":"bathroom","width":800,"height":0}
+,{"pic":"flash/kitchen.JPG","text":"kitchen","width":800,"height":0}
+,{"pic":"flash/pear.JPG","text":"pear","width":800,"height":0}
+,{"pic":"flash/dining room.JPG","text":"dining room","width":800,"height":0}
+,{"pic":"flash/cake.JPG","text":"cake","width":800,"height":0}
+,{"pic":"flash/living room.JPG","text":"living room","width":800,"height":0}
+,{"pic":"flash/violin.JPG","text":"violin","width":800,"height":0}
+,{"pic":"flash/flute.JPG","text":"flute","width":800,"height":0}
+,{"pic":"flash/saxophone.JPG","text":"saxophone","width":800,"height":0}
+,{"pic":"flash/drum.JPG","text":"drum","width":800,"height":0}
+,{"pic":"flash/triangle.JPG","text":"triangle","width":800,"height":0}
+,{"pic":"flash/guitar.JPG","text":"guitar","width":800,"height":0}
+,{"pic":"flash/harp.JPG","text":"harp","width":800,"height":0}
+,{"pic":"flash/bass.JPG","text":"bass","width":800,"height":0}
+,{"pic":"flash/piano.JPG","text":"piano","width":800,"height":0}
+,{"pic":"flash/accordion.JPG","text":"accordion","width":800,"height":0}
+,{"pic":"flash/trumpet.JPG","text":"trumpet","width":800,"height":0}
+,{"pic":"flash/salad.JPG","text":"salad","width":800,"height":0}
+,{"pic":"flash/sandwich.JPG","text":"sandwich","width":800,"height":0}
+,{"pic":"flash/chocolate.JPG","text":"chocolate","width":800,"height":0}
+,{"pic":"flash/ketchup.JPG","text":"ketchup","width":800,"height":0}
+,{"pic":"flash/ice cream.JPG","text":"ice cream","width":800,"height":0}
+,{"pic":"flash/hamburger.JPG","text":"hamburger","width":800,"height":0}
+,{"pic":"flash/hotdog.JPG","text":"hotdog","width":800,"height":0}
+,{"pic":"flash/grape.JPG","text":"grape","width":800,"height":0}
+,{"pic":"flash/strawberry.JPG","text":"strawberry","width":800,"height":0}
+,{"pic":"flash/kiwifruit.JPG","text":"kiwifruit","width":800,"height":0}
+,{"pic":"flash/blueberry.JPG","text":"blueberry","width":800,"height":0}
+,{"pic":"flash/mango.JPG","text":"mango","width":800,"height":0}
+,{"pic":"flash/french fries.JPG","text":"french fries","width":800,"height":0}
+,{"pic":"flash/orange.JPG","text":"orange","width":800,"height":0}
+,{"pic":"flash/apple.JPG","text":"apple","width":800,"height":0}
+,{"pic":"flash/watermelon.JPG","text":"watermelon","width":800,"height":0}
+,{"pic":"flash/banana.JPG","text":"banana","width":800,"height":0}
+,{"pic":"flash/vegetable.JPG","text":"vegetable","width":800,"height":0}
+,{"pic":"flash/pepper.JPG","text":"pepper","width":800,"height":0}
+,{"pic":"flash/tomato.JPG","text":"tomato","width":800,"height":0}
+,{"pic":"flash/cucumber.JPG","text":"cucumber","width":800,"height":0}
+,{"pic":"flash/bean.JPG","text":"bean","width":800,"height":0}
+,{"pic":"flash/potato.JPG","text":"potato","width":800,"height":0}
+,{"pic":"flash/carrot.JPG","text":"carrot","width":800,"height":0}
+,{"pic":"flash/cabbage.JPG","text":"cabbage","width":800,"height":0}
+,{"pic":"flash/garlic.JPG","text":"garlic","width":800,"height":0}
+,{"pic":"flash/mushroom.JPG","text":"mushroom","width":800,"height":0}
+,{"pic":"flash/pea.JPG","text":"pea","width":800,"height":0}
+,{"pic":"flash/chinese cabbage.JPG","text":"chinese cabbage","width":800,"height":0}
+,{"pic":"flash/eggplant.JPG","text":"eggplant","width":800,"height":0}
+,{"pic":"flash/onion.JPG","text":"onion","width":800,"height":0}
+,{"pic":"flash/pizza.JPG","text":"pizza","width":800,"height":0}
+,{"pic":"flash/pasta.JPG","text":"pasta","width":800,"height":0}
+,{"pic":"flash/noodles.JPG","text":"noodles","width":800,"height":0}
+,{"pic":"flash/dumplings.JPG","text":"dumplings","width":800,"height":0}
+,{"pic":"flash/fruit.JPG","text":"fruit","width":800,"height":0}
+,{"pic":"world/air.jpg","text":"air","width":800,"height":0}
+,{"pic":"world/america.jpg","text":"america","width":800,"height":0}
+,{"pic":"world/australia.jpg","text":"australia","width":800,"height":0}
+,{"pic":"world/brazil.jpg","text":"brazil","width":800,"height":0}
+,{"pic":"world/bridge.jpg","text":"bridge","width":800,"height":0}
+,{"pic":"world/canada.jpg","text":"canada","width":800,"height":0}
+,{"pic":"world/cave.jpg","text":"cave","width":800,"height":0}
+,{"pic":"world/china.jpg","text":"china","width":800,"height":0}
+,{"pic":"world/city.jpg","text":"city","width":800,"height":0}
+,{"pic":"world/country.jpg","text":"country","width":800,"height":0}
+,{"pic":"world/desert.jpg","text":"desert","width":800,"height":0}
+,{"pic":"world/earth.jpg","text":"earth","width":800,"height":0}
+,{"pic":"world/flag.jpg","text":"flag","width":800,"height":0}
+,{"pic":"world/forest.jpg","text":"forest","width":800,"height":0}
+,{"pic":"world/france.jpg","text":"france","width":800,"height":0}
+,{"pic":"world/germany.jpg","text":"germany","width":800,"height":0}
+,{"pic":"world/hill.jpg","text":"hill","width":800,"height":0}
+,{"pic":"world/india.jpg","text":"india","width":800,"height":0}
+,{"pic":"world/island.jpg","text":"island","width":800,"height":0}
+,{"pic":"world/italy.jpg","text":"italy","width":800,"height":0}
+,{"pic":"world/japan.jpg","text":"japan","width":800,"height":0}
+,{"pic":"world/lake.jpg","text":"lake","width":800,"height":0}
+,{"pic":"world/mountain.jpg","text":"mountain","width":800,"height":0}
+,{"pic":"world/nature.jpg","text":"nature","width":800,"height":0}
+,{"pic":"world/ocean.jpg","text":"ocean","width":800,"height":0}
+,{"pic":"world/paris.jpg","text":"paris","width":800,"height":0}
+,{"pic":"world/railway.jpg","text":"railway","width":800,"height":0}
+,{"pic":"world/river.jpg","text":"river","width":800,"height":0}
+,{"pic":"world/russia.jpg","text":"russia","width":800,"height":0}
+,{"pic":"world/sea.jpg","text":"sea","width":800,"height":0}
+,{"pic":"world/spain.jpg","text":"spain","width":800,"height":0}
+,{"pic":"world/street.jpg","text":"street","width":800,"height":0}
+,{"pic":"world/tunnel.jpg","text":"tunnel","width":800,"height":0}
+,{"pic":"world/valley.jpg","text":"valley","width":800,"height":0}
+,{"pic":"world/volcano.jpg","text":"volcano","width":800,"height":0}
+,{"pic":"world/waterfall.jpg","text":"waterfall","width":800,"height":0}
+,{"pic":"world/world.jpg","text":"world","width":800,"height":0}
+,{"pic":"placetraffic/airport.jpg","text":"airport","width":800,"height":0}
+,{"pic":"placetraffic/ambulance.jpg","text":"ambulance","width":800,"height":0}
+,{"pic":"placetraffic/bank.jpg","text":"bank","width":800,"height":0}
+,{"pic":"placetraffic/bicycle.jpg","text":"bicycle","width":800,"height":0}
+,{"pic":"placetraffic/boat.jpg","text":"boat","width":800,"height":0}
+,{"pic":"placetraffic/bookshop.jpg","text":"bookshop","width":800,"height":0}
+,{"pic":"placetraffic/bus stop.jpg","text":"bus stop","width":800,"height":0}
+,{"pic":"placetraffic/bus.jpg","text":"bus","width":800,"height":0}
+,{"pic":"placetraffic/cafe.jpg","text":"cafe","width":800,"height":0}
+,{"pic":"placetraffic/capital.jpg","text":"capital","width":800,"height":0}
+,{"pic":"placetraffic/car.jpg","text":"car","width":800,"height":0}
+,{"pic":"placetraffic/cinema.jpg","text":"cinema","width":800,"height":0}
+,{"pic":"placetraffic/circus.jpg","text":"circus","width":800,"height":0}
+,{"pic":"placetraffic/club.jpg","text":"club","width":800,"height":0}
+,{"pic":"placetraffic/countryside.jpg","text":"countryside","width":800,"height":0}
+,{"pic":"placetraffic/crossing.jpg","text":"crossing","width":800,"height":0}
+,{"pic":"placetraffic/crossroads.jpg","text":"crossroads","width":800,"height":0}
+,{"pic":"placetraffic/digger.jpg","text":"digger","width":800,"height":0}
+,{"pic":"placetraffic/disneyland.jpg","text":"disneyland","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"downtown","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"everywhere","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"factory","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"farm","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"fire engine","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"garden","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"grocery","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"ground","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"gym","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"helicopter","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"hospital","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"hotel","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"jeep","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"library","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"market","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"motorbike","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"museum","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"office","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"park","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"place","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"plane","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"police car","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"police office","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"pool","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"post office","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"pram","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"restaurant","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"road","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"rocket","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"school","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"scooter","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"ship","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"shop","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"shopping centre","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"shopping mall","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"sidewalk","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"stadium","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"station","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"submarine","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"supermarket","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"taxi","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"temple","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"tower","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"town","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"traffic light","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"train","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"truck","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"university","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"van","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"wheel","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"yacht","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"yard","width":800,"height":0}
+,{"pic":"placetraffic/{0}.jpg","text":"zoo","width":800,"height":0}
+,{"pic":"other/{0}.jpg","text":"a bit","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"a lot of","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"across from","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"after school","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"all right","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"balloon","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"be afraid of","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"be back","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"be careful","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"be good at","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"be proud of","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"bell","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"branch","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"by bus","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"by car","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"by taxi","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"candle","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"card","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"center","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"church","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"clean the room","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"coin","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"come in","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"corner","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"cube","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"diary","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"draw pictures","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"excuse me","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"fast food","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"fire","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"flower","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"fly a bite","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"get out","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"get to","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"get up","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"go boating","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"go for a picnic","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"go home","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"go out","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"go skating","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"go straight","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"go to bed","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"go to cinema","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"go to school","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"goodbye","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"grass","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"half","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"have a picnic","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"have breakfast","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"headset","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"hello","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"high jump","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"hobby","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"house","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"how many","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"how old","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"hurry up","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"in front of","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"in the future","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"kite","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"law","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"leaf","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"line","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"list","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"lock","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"look at","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"look for","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"look forward to","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"lotus","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"make a phone call","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"make a snowman","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"make friends","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"make the bed","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"money","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"of course","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"on foot","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"once a week","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"over there","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"pair","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"party","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"peony","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"pet","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"picture","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"piece","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"plant","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"play computer games","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"play football","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"play sports","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"play the piano","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"play with","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"plug","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"present","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"read books","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"roller skating","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"roof","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"rose","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"sand","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"secret","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"seed","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"shopping list","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"sign","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"sing songs","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"slide","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"socket","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"stamp","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"stay at home","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"stick","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"stone","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"string","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"stripe","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"sunflower","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"sweep the floor","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"swing","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"tent","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"thank you","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"the photos","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"theatre","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"ticket","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"too much","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"toy","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"tree","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"turn left","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"turn right","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"wait for","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"wake up","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"wall","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"wash clothes","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"watch tv","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"water","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"what about","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"whole","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"wood","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"wool","width":0,"height":0}
+,{"pic":"other/{0}.jpg","text":"write a letter","width":0,"height":0}
+]

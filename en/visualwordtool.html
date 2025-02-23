@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Visual Word ToolKit</title>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <link href="js/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .list-group-horizontal .list-group-item {
+            display: inline-block;
+            margin-left:0px;
+            padding-left:3px;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .image-word{
+            width:800px;
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            -moz-background-size:100% 100%;
+        }
+
+        .footer{
+            width:100%;
+            text-align: right;
+            padding-right: 30px;
+        }
+
+        #wordTip{
+            font-size: 20px;
+            margin-left: 8px;
+        }
+       
+    </style>
+    <script type="text/javascript"> 
+        function doTTS(){ 
+            var ttsDiv = document.getElementById('bdtts_div_id'); 
+            var ttsAudio = document.getElementById('tts_autio_id'); 
+            var ttsText = document.getElementById('ttsText').value; 
+ 
+            // 这样就可实现播放内容的替换了 
+            ttsDiv.removeChild(ttsAudio); 
+            var au1 = '<audio id="tts_autio_id" autoplay="autoplay">'; 
+            var sss = '<source id="tts_source_id" src="http://dict.youdao.com/dictvoice?audio='+ttsText+'" type="audio/mpeg">'; 
+            var eee = '<embed id="tts_embed_id" height="0" width="0" src="">'; 
+            var au2 = '</audio>'; 
+            ttsDiv.innerHTML = au1 + sss + eee + au2; 
+            ttsAudio = document.getElementById('tts_autio_id'); 
+            ttsAudio.play(); 
+        } 
+  
+    </script>
+</head>
+<body>
+    <div>
+        &nbsp;
+        <input type="text" id="ttsText" value='cat' style="display:none;"/>
+        <input type="button" id="tts_btn" onclick="btnPrevious()" value="上一个" class="btn btn-info"/>
+        <input type="button" id="tts_btn" onclick="btnNext()" value="下一个" class="btn btn-info"/>
+        
+    </div>
+    <br/>
+    <div id="bdtts_div_id">
+        <audio id="tts_autio_id">
+            <source id="tts_source_id" type="audio/mpeg">
+            <embed id="tts_embed_id" height="0" width="0" src="">
+        </audio>
+    </div>
+    <div>
+        <ul id="puzzle" class="list-group-horizontal" style="width:100%;text-align:center;padding-left:0;">
+        </ul>
+    </div>
+    <div id="wordTip" class="text-primary">&nbsp;</div>
+    <br/>
+    <div>
+        <image id="man" class="image-word"></image>
+    </div>
+    <br/>
+    
+     
+</body>
+<script type="text/javascript">
+    var num = 0   //记录word的数量
+    var word1 = "" //英文
+    var word2 = ""    //中文
+    var bFinish = false
+    var numErr= 0
+    var wordDict=[]
+    var currentIdx=0  //当前序号
+    var currentWord = {}
+    var x0
+    var y0
+    var x1
+    var y1
+    var clickNum = 0
+    //加载数据并设置参数
+    $(document).ready(function(){
+        //加载词典
+        LoadDict("kid1")
+ 
+        $("#man").click(function(e){
+            var offset = $(this).offset();
+            var x = (e.pageX - offset.left);
+            var y = (e.pageY - offset.top);
+            //console.log(x + ", " + y);
+
+            var showHeight = $("#man").height();
+            var showWidth = $("#man").width();
+            console.log(showWidth + ", " + showHeight);
+
+            var itype = clickNum % 2;
+            //console.log(clickNum + "," + itype)
+            if(itype == 0){
+                x0 = x;
+                y0 = y;
+                $("#wordTip").text(".");
+            }else{
+                x1 = x;
+                y1 = y;
+
+                //输出
+                //var str1 = "\"x0\":"+x0+",\"y0\":"+y0+", \"x1\":"+x1+",\"y1\":"+y1+"";
+                var str1 = $.format("\"t\":\"\",\"x0\":{0},\"y0\":{1},\"x1\":{2},\"y1\":{3}",parseInt(x0),parseInt(y0),parseInt(x1),parseInt(y1));
+                //var str1 = $.format("\"x0\":{0},\"y0\":{1},\"x1\":{2},\"y1\":{3}",parseInt(x0),parseInt(y0),parseInt(x1),parseInt(y1));
+                $("#wordTip").text(str1);
+            }
+         
+            ++clickNum
+
+        });
+    })
+
+    //根据点击查询文字
+    function GetWord(x,y){
+        for(var j = 0,len=currentWord["words"].length; j < len; j++) {
+            var w = currentWord["words"][j];
+            if(x >= w["x0"] && x <= w["x1"] && y >= w["y0"] && y <= w["y1"]){
+                return w["t"];
+            }
+        }
+
+        return "";
+    }
+    
+    //加载配置文件
+    function LoadDict(sfile){
+        $.ajax({
+            url: "./visualword/data/json/"+sfile+".json",
+            type: 'get',
+            dataType: 'json',
+            success: function (result) {
+                wordDict = result;
+                InitWord();
+             } 
+        });
+    }
+ 
+    function InitWord(){
+        GetStorage();
+        if(currentIdx >= wordDict.length){
+            currentIdx = 0;
+        }
+        currentWord= wordDict[currentIdx];
+        ResetManImage(currentWord["pic"])
+    }
+ 
+    function ShowManImage(){
+        $("#man").attr("src", "./HangMan/"+numErr+".png")
+        //$("#man").css('background-image','url(./HangMan/'+numErr+'.png)')
+    }
+
+    function ResetManImage(sfile){
+       $("#man").attr("src", "./visualword/data/images/"+sfile)
+       //$("#man").css('background-image','url(./HangMan/0.png)')
+    }
+    
+    //上一张
+    function btnPrevious(){
+        --currentIdx;
+        if(currentIdx < 0){
+            ++currentIdx;
+        }
+        //记录
+        SetStorage();
+
+        currentWord= wordDict[currentIdx];
+        ResetManImage(currentWord["pic"])
+    }
+    //下一张
+    function btnNext(){
+        ++currentIdx;
+        if(currentIdx >= wordDict.length){
+            --currentIdx;
+        }
+        //记录
+        SetStorage();
+
+        currentWord= wordDict[currentIdx];
+        ResetManImage(currentWord["pic"])
+    }
+
+    //记录
+    function GetStorage(){
+        var data = localStorage.getItem("visualword");
+        if (data) {
+            currentIdx = data;
+        }else{
+            currentIdx = 0;
+        }
+    }
+ 
+    function SetStorage(){
+        //记录
+        localStorage.setItem("visualword", currentIdx)
+    }
+ 
+    //提示
+    function ToTip(){
+        //TraslateWord(word1)
+        $("#wordTip").text(word2)
+    }
+
+    function ToTip2(){
+        let str1 = word1.toLowerCase() + ":"+word2
+        $("#wordTip").text(str1)
+    }
+
+    $.format = function (source, params) {
+        if (arguments.length == 1)
+            return function () {
+                var args = $.makeArray(arguments);
+                args.unshift(source);
+                return $.format.apply(this, args);
+            };
+        if (arguments.length > 2 && params.constructor != Array) {
+            params = $.makeArray(arguments).slice(1);
+        }
+        if (params.constructor != Array) {
+            params = [params];
+        }
+        $.each(params, function (i, n) {
+            source = source.replace(new RegExp("\\{" + i + "\\}", "g"), n);
+        });
+        return source;
+    };
+
+
+</script>
+</html>
